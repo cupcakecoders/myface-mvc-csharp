@@ -6,7 +6,7 @@
 
 <h2>User Creation form</h2>
 
-<form action="" method="post">
+<form asp-controller="Users" asp-action="CreateUser" method="post">
     <label for="firstName"> First Name:</label><br>
     <input type="text" id="firstName" name="firstName"/> <br>     
     
@@ -19,5 +19,5 @@
     <label for="email"> email:</label><br>
     <input type="text" id="email" name="email"/> <br>
     
-     <button type="button" onclick="alert('I do not work yet')">Submit</button> 
+     <button type="submit" >Submit</button> 
 </form>
