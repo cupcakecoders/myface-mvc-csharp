@@ -12,14 +12,11 @@
     Layout = "_Layout";
     
 }
-@{ int i = 1;}
 @foreach (var post in Model.Posts)
 {
     
     <div class="post container"/>
-    <h2>This is post number @i:
-        @post.Message</h2>
+    <h2>@post.Message</h2>
     <img src=@post.ImageUrl>
-    <p>Posted at @post.PostedAt by @post.PostedBy</p>
-    i++;
+    <p>Posted at @post.PostedAt by @post.PostedBy.DisplayName</p>
 }
