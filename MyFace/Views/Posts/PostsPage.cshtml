@@ -12,12 +12,15 @@
     Layout = "_Layout";
     
 }
+<h1>THIS IS THE POST PAGE</h1>
 @foreach (var post in Model.Posts)
 {
     
-    <div class="post container"/>
-    <h2>@post.Message</h2>
-    <p>Posted by @post.PostedBy.DisplayName</p>  <img src=@post.PostedBy.ProfileImageUrl>
-    <img src=@post.ImageUrl>
-    <p>Posted at @post.PostedAt by @post.PostedBy.DisplayName</p>
+    <div class="post-container">
+        <h2 class="post-title">@post.Message</h2>
+            <h3 class="post-user-title">Posted by @post.PostedBy.DisplayName</h3> 
+        <img class="profile-pic" src=@post.PostedBy.ProfileImageUrl>
+        <img class="main-content-pic" src=@post.ImageUrl>
+        <p class="main-content-details">Posted at @post.PostedAt </p>
+    </div>
 }
