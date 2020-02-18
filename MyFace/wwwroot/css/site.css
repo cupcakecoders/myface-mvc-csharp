@@ -5,6 +5,7 @@
     flex-wrap : wrap;
     padding: 0px;
 }
+
 .post-container
 {
     min-width: 300px;
@@ -21,10 +22,22 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.post-content
+{
+    border: 1px solid blue;
+    max-width: 99%;
+    max-height: 100%;
+}
+
 .post-content-pic
 {
-    width: 200px;
-    height: 200px;
-
+    max-width:95%;
+    height:;
     object-fit: cover;
+    padding: 10px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
