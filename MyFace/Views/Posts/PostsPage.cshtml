@@ -11,19 +11,19 @@
     Layout = "_Layout";
     
 }
-<h1>THIS IS THE POST PAGE</h1>
+<h1>All Posts Page</h1>
 <ol class="post-stream">
     @foreach (var post in Model.Posts)
     {
          <li class="post-container">
-             <h2 class="post-title">@post.Message</h2>
-             <div class="post-user-details">    
+             <div class="post-user-details">  
+                 <h2 class="post-title">@post.Message</h2>
                  <h3 class="post-user-title">Posted by @post.PostedBy.DisplayName</h3>
+                 <p class="post-content-details">Posted at @post.PostedAt </p>
                  <img class="post-user-profile-pic" src=@post.PostedBy.ProfileImageUrl>
              </div>
              <div class="post-content">
                  <img class="post-content-pic" src=@post.ImageUrl>
-                 <p class="post-content-details">Posted at @post.PostedAt </p>
              </div>
          </li>
     }

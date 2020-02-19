@@ -1,5 +1,15 @@
-﻿@model MyFace.Models.View.UsersViewModel
+﻿@using MyFace.Controllers
+﻿@using Microsoft.EntityFrameworkCore.Infrastructure
+
 
 @{
     Layout = "_Layout";
+}
+
+<h1>All Users</h1>
+
+@foreach (var user in Model.Users)
+{
+    <h2>@user.FirstName @user.LastName</h2>
+    <img src="@user.ProfileImageUrl">
 }

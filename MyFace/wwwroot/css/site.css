@@ -1,5 +1,50 @@
+*{
+
+}
+
+/*CSS for nav*/
+.navbar-brand {
+    font-size: 8em;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.navbar {
+    padding: 20px;
+    font-family: monospace;
+}
+
+.nav-item {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+/*CSS for text*/
+h1 {
+    font-family: monospace;
+    font-size: 3em;
+    margin: 6px;
+}
+
+h2 {
+    font-family:sans-serif;
+    font-size: 2em;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
 /*CSS for Posts Page*/
-.post-stream {
+.post-stream 
+{
     list-style : none;
     display : flex;
     flex-wrap : wrap;
@@ -12,7 +57,9 @@
     width: 450px;
     flex-grow: 1;
     position : relative;
-    border: 1px solid red;
+    padding: 10px;
+    background-color: #dddddd;
+    margin: 10px;
 }
 
 .post-user-profile-pic
@@ -23,20 +70,29 @@
     object-fit: cover;
 }
 
+.post-user-details 
+{
+    height: 240px;
+}
+
 .post-content
 {
-    border: 1px solid blue;
     max-width: 99%;
     max-height: 100%;
 }
 
 .post-content-pic
 {
-    max-width:95%;
-    height:
-    object-fit: cover;
+    width:100%;
+    object-fit: contain;
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/*Footer*/
+.footer
+{
+    font-family:sans-serif;
 }
