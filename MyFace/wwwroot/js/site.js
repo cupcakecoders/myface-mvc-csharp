@@ -10,3 +10,17 @@ function removePostContainer(event) {
     const listItem = target.closest(".post-container");
     listItem.remove();
 }
+
+let modalBtn = document.getElementById("modal-btn");
+
+let modal = document.getElementById("modal");
+
+
+
+modalBtn.onclick = function() {
+    modal.style.display = "block"
+};
+
+function openForm() {
+    document.getElementById("").style.display = "block";
+}
