@@ -17,5 +17,16 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Icons\ic_close_black_24dp.png" />
+      <Content Include="Icons\ic_close_black_24dp.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Icons\ic_keyboard_return_black_24dp.png" />
+      <Content Include="Icons\ic_keyboard_return_black_24dp.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 
 </Project>
