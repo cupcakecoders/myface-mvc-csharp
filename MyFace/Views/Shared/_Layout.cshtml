@@ -1,10 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - MyFace</title>
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 </head>
 <body>
 <header>
@@ -30,36 +32,36 @@
         </div>
     </nav>
 </header>
-        <div id="new-post-modal-overlay" class="modal-overlay">
-            <div id="new-post-modal-menu" class="modal-menu">
-                <span id="new-post-modal-close-btn" class="close-btn">&times;</span>
-                <p>this is the text inside the modal</p>
-                <form asp-controller="Posts" asp-action="CreatePost" method="post">
-                    <label for="userid">User ID:</label><br>
-                    <input type="text" id="userid" name="userid"><br>
-                    
-                    <label for="message">Message:</label><br>
-                    <input type="text" id="message" name="message"><br>
-                    
-                    <label for="imageurl">Image URL:</label><br>
-                    <input type="url" id="imageurl" name="imageurl"><br>
-                    
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    <div class="footer-container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+<div id="new-post-modal-overlay" class="modal-overlay">
+    <div id="new-post-modal-menu" class="modal-menu">
+        <i id="new-post-modal-close-btn" class="material-icons close-btn">close</i>
+        <p>Create a new post</p>
+        <form asp-controller="Posts" asp-action="CreatePost" method="post" id="new-post-modal-form" class="modal-form">
+            <label for="userid">User ID:</label><br>
+            <input type="text" id="userid" name="userid"><br>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - MyFace - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+            <label for="message">Message:</label><br>
+            <input type="text" id="message" name="message"><br>
+
+            <label for="imageurl">Image URL:</label><br>
+            <input type="url" id="imageurl" name="imageurl"><br>
+
+            <input type="submit" value="Submit" id="submit-button">
+        </form>
+    </div>
+</div>
+<div class="footer-container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2020 - MyFace - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@RenderSection("Scripts", required: false)
 </body>
 </html>

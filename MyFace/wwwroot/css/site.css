@@ -125,6 +125,20 @@ p {
     background-color: aliceblue;
     position: relative;
     top: 25%;
-    left: 20%;
-    width: 60%;
+    left: 30%;
+    width: 40%;
+    padding-inline-start: 30px;
+    padding-block-end: 30px;
+}
+.close-btn{
+    padding-inline-start: 95%;
+    padding-block-start: 1%;
+}
+
+.modal-form{
+    font-family:sans-serif
+}
+
+#submit-button{
+    margin-block-start: 2%;
 }
