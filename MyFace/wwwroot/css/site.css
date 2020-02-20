@@ -19,12 +19,13 @@ ul.navbar-nav{
     padding-inline-start: inherit;
     padding-block-start: 10px;
     padding-inline-end: 10px;
+    text-align: right;
 }
 .nav-item {
     font-size: 2em;
     text-decoration: none;
 }
-div.container {
+div.header-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -109,7 +110,7 @@ p {
     font-family:sans-serif;
 }
 
-.modal{
+.modal-overlay{
     display: none;
     position: fixed;
     z-index: 1;
@@ -120,7 +121,7 @@ p {
     right: 10px;
 }
 
-.modal-content {
+.modal-menu {
     background-color: aliceblue;
     position: relative;
     top: 25%;

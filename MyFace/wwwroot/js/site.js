@@ -11,16 +11,17 @@ function removePostContainer(event) {
     listItem.remove();
 }
 
-let modalBtn = document.getElementById("modal-btn");
+let newPostModalBtn = document.getElementById("new-post-modal-btn");
 
-let modal = document.getElementById("modal");
+let newPostModalOverlay = document.getElementById("new-post-modal-overlay");
+let newPostModalCloseBtn = document.getElementById("new-post-modal-close-btn");
 
 
-
-modalBtn.onclick = function() {
-    modal.style.display = "block"
+newPostModalBtn.onclick = function(event) {
+    event.preventDefault();
+    newPostModalOverlay.style.display = "block";
 };
 
-function openForm() {
-    document.getElementById("").style.display = "block";
-}
+newPostModalCloseBtn.onclick = function(event){
+    newPostModalOverlay.style.display = "none";
+};
