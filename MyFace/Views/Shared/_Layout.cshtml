@@ -34,11 +34,17 @@
             <div id="new-post-modal-menu" class="modal-menu">
                 <span id="new-post-modal-close-btn" class="close-btn">&times;</span>
                 <p>this is the text inside the modal</p>
-                <form>
-                    <label for="fname">First name:</label><br>
-                      <input type="text" id="fname" name="fname"><br>
-                      <label for="lname">Last name:</label><br>
-                      <input type="text" id="lname" name="lname">
+                <form asp-controller="Posts" asp-action="CreatePost" method="post">
+                    <label for="userid">User ID:</label><br>
+                    <input type="text" id="userid" name="userid"><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message"><br>
+                    
+                    <label for="imageurl">Image URL:</label><br>
+                    <input type="url" id="imageurl" name="imageurl"><br>
+                    
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
